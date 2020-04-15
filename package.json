@@ -1,0 +1,49 @@
+{
+  "name": "WebBasic",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/doc-文档-cccfff.svg?style=popout-square&colorA=006699)",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gh-pages": "^2.2.0",
+    "gitbook-plugin-alerts": "^0.2.0",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-atoc": "^1.0.3",
+    "gitbook-plugin-autotheme": "^1.0.1",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-change_girls": "^2.2.1",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-klipse": "^1.2.0",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-embed-pdf": "^1.0.1",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-mygitalk": "^0.2.6",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-page-copyright": "^1.0.8",
+    "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-popup": "^0.0.1",
+    "gitbook-plugin-sharing-plus": "^0.0.2",
+    "gitbook-plugin-versions-select": "^0.1.1",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-theme-comscore": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gitbook build && gitbook serve",
+    "deploy": "gh-pages -d _book"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaoJusheng/webBook.git"
+  },
+  "keywords": [],
+  "author": "Mr. Yao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaoJusheng/webBook/issues"
+  },
+  "homepage": "https://github.com/YaoJusheng/webBook#readme"
+}

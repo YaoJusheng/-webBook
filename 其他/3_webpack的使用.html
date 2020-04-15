@@ -1,0 +1,1143 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3.webpack的使用 · Web前端基础</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Mr. Yao <jusheng_yao@outlook.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-change_girls/girls.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4_个人网站之GitBook的简单使用.html" />
+    
+    
+    <link rel="prev" href="2_gh-pages部署到GitHub.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://blog.yaogro.cn" target="_blank" class="custom-link">个人博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://blog.yaogro.cn/resume" target="_blank" class="custom-link">静态简历</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://blog.yaogro.cn/dynamic-resume" target="_blank" class="custom-link">动态简历</a>
+        </li>
+    
+        
+        <li>
+            <a href="http://blog.yaogro.cn/online-resume" target="_blank" class="custom-link">简历制作</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../HTML基础/">
+            
+                <a href="../HTML基础/">
+            
+                    
+                    1.HTML基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../HTML基础/1_HTML标签常用整理.html">
+            
+                <a href="../HTML基础/1_HTML标签常用整理.html">
+            
+                    
+                    1.1.HTML标签常用整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../HTML基础/2_HTML标签常用属性和CSS样式.html">
+            
+                <a href="../HTML基础/2_HTML标签常用属性和CSS样式.html">
+            
+                    
+                    1.2.HTML标签常用属性和CSS样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CSS布局/">
+            
+                <a href="../CSS布局/">
+            
+                    
+                    2.CSS布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../CSS布局/圣杯+双飞翼布局/">
+            
+                <a href="../CSS布局/圣杯+双飞翼布局/">
+            
+                    
+                    2.1.圣杯+双飞翼布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../CSS布局/圣杯+双飞翼布局/1_圣杯布局.html">
+            
+                <a href="../CSS布局/圣杯+双飞翼布局/1_圣杯布局.html">
+            
+                    
+                    2.1.1.圣杯布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="../CSS布局/圣杯+双飞翼布局/2_双飞翼布局.html">
+            
+                <a href="../CSS布局/圣杯+双飞翼布局/2_双飞翼布局.html">
+            
+                    
+                    2.1.2.双飞翼布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../CSS布局/Flex弹性布局/">
+            
+                <a href="../CSS布局/Flex弹性布局/">
+            
+                    
+                    2.2.Flex弹性布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="../CSS布局/Flex弹性布局/1_概论.html">
+            
+                <a href="../CSS布局/Flex弹性布局/1_概论.html">
+            
+                    
+                    2.2.1.概论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="../CSS布局/Flex弹性布局/2_Flex布局是什么.html">
+            
+                <a href="../CSS布局/Flex弹性布局/2_Flex布局是什么.html">
+            
+                    
+                    2.2.2.Flex布局是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3" data-path="../CSS布局/Flex弹性布局/3_Flex基本概念.html">
+            
+                <a href="../CSS布局/Flex弹性布局/3_Flex基本概念.html">
+            
+                    
+                    2.2.3.Flex基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.4" data-path="../CSS布局/Flex弹性布局/4_Flex容器属性.html">
+            
+                <a href="../CSS布局/Flex弹性布局/4_Flex容器属性.html">
+            
+                    
+                    2.2.4.Flex容器属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.5" data-path="../CSS布局/Flex弹性布局/5_Flex项目属性.html">
+            
+                <a href="../CSS布局/Flex弹性布局/5_Flex项目属性.html">
+            
+                    
+                    2.2.5.Flex项目属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../CSS布局/Grid网格布局/">
+            
+                <a href="../CSS布局/Grid网格布局/">
+            
+                    
+                    2.3.Grid网格布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="../CSS布局/Grid网格布局/1_Grid网格布局简介.html">
+            
+                <a href="../CSS布局/Grid网格布局/1_Grid网格布局简介.html">
+            
+                    
+                    2.3.1.简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="../CSS布局/Grid网格布局/2_Grid常用术语.html">
+            
+                <a href="../CSS布局/Grid网格布局/2_Grid常用术语.html">
+            
+                    
+                    2.3.2.常用术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.3" data-path="../CSS布局/Grid网格布局/3_Grid容器属性.html">
+            
+                <a href="../CSS布局/Grid网格布局/3_Grid容器属性.html">
+            
+                    
+                    2.3.3.Grid容器属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.4" data-path="../CSS布局/Grid网格布局/4_Grid项目属性.html">
+            
+                <a href="../CSS布局/Grid网格布局/4_Grid项目属性.html">
+            
+                    
+                    2.3.4.Grid项目属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.5" data-path="../CSS布局/Grid网格布局/5_经典的三列布局.html">
+            
+                <a href="../CSS布局/Grid网格布局/5_经典的三列布局.html">
+            
+                    
+                    2.3.5.经典的三列布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.6" data-path="../CSS布局/Grid网格布局/6_更实用的网格布局.html">
+            
+                <a href="../CSS布局/Grid网格布局/6_更实用的网格布局.html">
+            
+                    
+                    2.3.6.更实用的网格布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3.其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="1_静态资源压缩.html">
+            
+                <a href="1_静态资源压缩.html">
+            
+                    
+                    3.1.静态资源压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="2_gh-pages部署到GitHub.html">
+            
+                <a href="2_gh-pages部署到GitHub.html">
+            
+                    
+                    3.2.gh-pages 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.3" data-path="3_webpack的使用.html">
+            
+                <a href="3_webpack的使用.html">
+            
+                    
+                    3.3.webpack的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="4_个人网站之GitBook的简单使用.html">
+            
+                <a href="4_个人网站之GitBook的简单使用.html">
+            
+                    
+                    3.4.GitBook的简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.3.webpack的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#1&#x7B80;&#x4ECB;"><b></b>1.&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#2webpack-&#x7684;&#x7279;&#x70B9;"><b></b>2.Webpack &#x7684;&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#3&#x5B89;&#x88C5;&#x4F7F;&#x7528;"><b></b>3.&#x5B89;&#x88C5;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#31&#x5B89;&#x88C5;"><b></b>3.1.&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#32&#x7B80;&#x5355;&#x4F7F;&#x7528;"><b></b>3.2.&#x7B80;&#x5355;&#x4F7F;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#4webpack-&#x6838;&#x5FC3;"><b></b>4.Webpack &#x6838;&#x5FC3;</a></li><ul><li><span class="title-icon "></span><a href="#41&#x5E38;&#x7528;-loader"><b></b>4.1.&#x5E38;&#x7528; Loader</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><hr>
+<p><code>webpack</code> &#x662F;&#x4E00;&#x6B3E;&#x6A21;&#x5757;&#x52A0;&#x8F7D;&#x5668;&#x517C;&#x6253;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x628A;&#x5404;&#x79CD;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;js&#xFF08;&#x542B;JSX&#xFF09;&#x3001;&#x6837;&#x5F0F;&#xFF08;&#x542B;less/sass&#xFF09;&#x3001;&#x56FE;&#x7247;&#x7B49;&#x90FD;&#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x6765;&#x4F7F;&#x7528;&#x548C;&#x5904;&#x7406;&#x3002;</p>
+<!-- more -->
+<h2 id="1&#x7B80;&#x4ECB;"><a name="1&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#1&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x7B80;&#x4ECB;</h2>
+<p><code>Webpack</code> &#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6253;&#x5305;&#x5668;&#x3002;&#x6839;&#x636E;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x8FDB;&#x884C;&#x9759;&#x6001;&#x5206;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x89C4;&#x5219;&#x5C06;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;
+&#x76F8;&#x6BD4;&#x4E8E;  <code>gulp</code>&#x3001;<code>grunt</code> &#x7B49;&#x6784;&#x4EF6;&#x5DE5;&#x5177;&#xFF0C;<code>WebPack</code> &#x662F;&#x4E00;&#x79CD;&#x6A21;&#x5757;&#x5316;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x9002;&#x5408;&#x4E00;&#x4E9B;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x9879;&#x76EE;&#x7684;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6A21;&#x5757;&#x95F4;&#x4F9D;&#x8D56;&#x4E0D;&#x5F3A;&#xFF0C;
+&#x800C; <code>gulp</code> &#x7B49;&#x5DE5;&#x5177;&#x4FA7;&#x91CD;&#x4E8E;&#x8D44;&#x6E90;&#x538B;&#x7F29;&#x548C;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x6784;&#x5EFA;&#xFF0C;&#x76EE;&#x524D;&#x5927;&#x578B;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x4E24;&#x8005;&#xFF0C;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x5F20;&#x5B98;&#x7F51;&#x56FE;&#x7247;&#xFF0C;&#x5F88;&#x597D;&#x5730;&#x5C55;&#x793A;&#x4E86;&#x5B83;&#x7684;&#x7528;&#x9014;&#xFF1A;</p>
+<p><img src="images/webpack.jpg" alt="&#x5B98;&#x7F51;&#x56FE;&#x7247;"></p>
+<h2 id="2webpack-&#x7684;&#x7279;&#x70B9;"><a name="2webpack-&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#2webpack-&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2.<code>Webpack</code> &#x7684;&#x7279;&#x70B9;</h2>
+<ul>
+<li><p>&#x4EE3;&#x7801;&#x62C6;&#x5206;
+Webpack &#x6709;&#x4E24;&#x79CD;&#x7EC4;&#x7EC7;&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x3002;&#x5F02;&#x6B65;&#x4F9D;&#x8D56;&#x4F5C;&#x4E3A;&#x5206;&#x5272;&#x70B9;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5757;&#x3002;&#x5728;&#x4F18;&#x5316;&#x4E86;&#x4F9D;&#x8D56;&#x6811;&#x540E;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x533A;&#x5757;&#x90FD;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x6253;&#x5305;&#x3002;</p>
+</li>
+<li><p>Loader
+Webpack &#x672C;&#x8EAB;&#x53EA;&#x80FD;&#x5904;&#x7406;&#x539F;&#x751F;&#x7684; JavaScript &#x6A21;&#x5757;&#xFF0C;&#x4F46;&#x662F; loader &#x8F6C;&#x6362;&#x5668;&#x53EF;&#x4EE5;&#x5C06;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8D44;&#x6E90;&#x8F6C;&#x6362;&#x6210; JavaScript &#x6A21;&#x5757;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x4EFB;&#x4F55;&#x8D44;&#x6E90;&#x90FD;&#x53EF;&#x4EE5;&#x6210;&#x4E3A; Webpack &#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+</li>
+<li><p>&#x667A;&#x80FD;&#x89E3;&#x6790;
+Webpack &#x6709;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x4EFB;&#x4F55;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x65E0;&#x8BBA;&#x5B83;&#x4EEC;&#x7684;&#x6A21;&#x5757;&#x5F62;&#x5F0F;&#x662F; CommonJS&#x3001; AMD &#x8FD8;&#x662F;&#x666E;&#x901A;&#x7684; JS &#x6587;&#x4EF6;&#x3002;&#x751A;&#x81F3;&#x5728;&#x52A0;&#x8F7D;&#x4F9D;&#x8D56;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x8868;&#x8FBE;&#x5F0F; require(&quot;./templates/&quot; + name + &quot;.jade&quot;)&#x3002;</p>
+</li>
+<li><p>&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;
+Webpack &#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x4E30;&#x5BCC;&#x7684;&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x5927;&#x591A;&#x6570;&#x5185;&#x5BB9;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x548C;&#x4F7F;&#x7528;&#x5F00;&#x6E90;&#x7684; Webpack &#x63D2;&#x4EF6;&#xFF0C;&#x6765;&#x6EE1;&#x8DB3;&#x5404;&#x5F0F;&#x5404;&#x6837;&#x7684;&#x9700;&#x6C42;&#x3002;</p>
+</li>
+<li><p>&#x5FEB;&#x901F;&#x8FD0;&#x884C;
+Webpack &#x4F7F;&#x7528;&#x5F02;&#x6B65; I/O &#x548C;&#x591A;&#x7EA7;&#x7F13;&#x5B58;&#x63D0;&#x9AD8;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97; Webpack &#x80FD;&#x591F;&#x4EE5;&#x4EE4;&#x4EBA;&#x96BE;&#x4EE5;&#x7F6E;&#x4FE1;&#x7684;&#x901F;&#x5EA6;&#x5FEB;&#x901F;&#x589E;&#x91CF;&#x7F16;&#x8BD1;&#x3002;</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://www.w3cschool.cn/webpackguide/webpackguide-ewiz2775.html" target="_blank">W3Cschool</a></p>
+</blockquote>
+<h2 id="3&#x5B89;&#x88C5;&#x4F7F;&#x7528;"><a name="3&#x5B89;&#x88C5;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#3&#x5B89;&#x88C5;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x5B89;&#x88C5;&#x4F7F;&#x7528;</h2>
+<h3 id="31&#x5B89;&#x88C5;"><a name="31&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#31&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.&#x5B89;&#x88C5;</h3>
+<p>&#xFF08;1&#xFF09;&#x3001;&#x786E;&#x4FDD;&#x5DF2;&#x5B89;&#x88C5; <code>Node.js</code> &#x73AF;&#x5883;&#xFF0C;&#x4F7F;&#x7528; <code>npm</code> &#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code class="lang-bash">npm install webpack -g
+</code></pre>
+<p>&#xFF08;2&#xFF09;&#x3001;&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#xFF0C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-bash">npm init
+<span class="hljs-comment"># &#x6B64;&#x65F6;&#x4F1A;&#x751F;&#x6210; package.json</span>
+</code></pre>
+<p>&#xFF08;3&#xFF09;&#x3001;&#x5B89;&#x88C5; <code>webpack</code> &#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-bash">npm install webpack --save-dev
+</code></pre>
+<p>&#xFF08;4&#xFF09;&#x3001;&#x5B89;&#x88C5; <code>Webpack</code> &#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF1A;</p>
+<pre><code class="lang-bash">npm install webpack-dev-server --save-dev
+</code></pre>
+<h3 id="32&#x7B80;&#x5355;&#x4F7F;&#x7528;"><a name="32&#x7B80;&#x5355;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#32&#x7B80;&#x5355;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.&#x7B80;&#x5355;&#x4F7F;&#x7528;</h3>
+<p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9879;&#x76EE; <code>hello-world</code>&#xFF0C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="images/hello-world.png" alt="&#x76EE;&#x5F55;"></p>
+<p>&#xFF08;1&#xFF09;&#x3001;<code>index.html</code> &#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Webpack test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">&quot;blue&quot;</span>&gt;</span>This is a test<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Hello Webpack!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>----------------------------------------<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;bundle.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#xFF08;2&#xFF09;&#x3001;<code>module.js</code> &#x548C; <code>test.js</code> &#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// module.js</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&apos;&lt;div align=&quot;center&quot;&gt;&lt;h4&gt;It works from module.js.&lt;/h4&gt;&lt;/div&gt;&apos;</span>
+
+<span class="hljs-comment">// test.js</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./module.js&apos;</span>)) <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x6A21;&#x5757;</span>
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">&apos;&lt;div align=&quot;center&quot;&gt;&lt;h3&gt;webpack`s work is done.&lt;/h3&gt;&lt;/div&gt;&apos;</span>)
+</code></pre>
+<p>&#xFF08;3&#xFF09;&#x3001;<code>package.json</code> &#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;hello-world&quot;</span>,
+  <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;1.0.0&quot;</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;webpack test&quot;</span>,
+  <span class="hljs-string">&quot;main&quot;</span>: <span class="hljs-string">&quot;test.js&quot;</span>,
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>,
+    <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;webpack test.js bundle.js&quot;</span>
+  },
+  <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;Mr. Yao&quot;</span>,
+  <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;ISC&quot;</span>,
+  <span class="hljs-string">&quot;devDependencies&quot;</span>: {
+    <span class="hljs-string">&quot;webpack&quot;</span>: <span class="hljs-string">&quot;^4.42.1&quot;</span>
+  },
+  <span class="hljs-string">&quot;dependencies&quot;</span>: {}
+}
+</code></pre>
+<p>&#xFF08;4&#xFF09;&#x3001;&#x65B0;&#x5EFA; <code>webpack.config.js</code> &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-comment">// &#x5165;&#x53E3;&#x6587;&#x4EF6;</span>
+  entry:  __dirname + <span class="hljs-string">&quot;/test.js&quot;</span>, <span class="hljs-comment">//</span>
+  <span class="hljs-comment">// &#x8F93;&#x51FA;&#x6587;&#x4EF6;</span>
+  output: {
+    path: __dirname + <span class="hljs-string">&quot;/&quot;</span>, 
+    filename: <span class="hljs-string">&quot;bundle.js&quot;</span> <span class="hljs-comment">//&#x6253;&#x5305;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x540D;</span>
+  },
+  mode: <span class="hljs-string">&apos;development&apos;</span>
+}
+</code></pre>
+<p>&#xFF08;5&#xFF09;&#x3001;&#x8FD0;&#x884C;&#x6253;&#x5305;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">npm run dev
+</code></pre>
+<p>&#x9875;&#x9762;&#x663E;&#x793A;&#xFF1A;</p>
+<p><img src="images/result.png" alt="&#x9875;&#x9762;&#x663E;&#x793A;"></p>
+<h2 id="4webpack-&#x6838;&#x5FC3;"><a name="4webpack-&#x6838;&#x5FC3;" class="anchor-navigation-ex-anchor" href="#4webpack-&#x6838;&#x5FC3;"><i class="fa fa-link" aria-hidden="true"></i></a>4.<code>Webpack</code> &#x6838;&#x5FC3;</h2>
+<p><strong><font face="&#x6977;&#x4F53;" color="green">&#x6838;&#x5FC3;&#x6982;&#x5FF5;</font></strong>&#xFF1A;</p>
+<ul>
+<li><font face="&#x534E;&#x6587;&#x884C;&#x6977;" color="green">&#x5165;&#x53E3;(entry)</font>&#xFF1A;<font face="&#x534E;&#x6587;&#x884C;&#x6977;">&#x6307;&#x793A; webpack &#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4EE5;&#x53CA;&#x6A21;&#x5757;&#x548C;&#x5E93;&#x662F;&#x5165;&#x53E3;&#x8D77;&#x70B9;</font></li>
+<li><font face="&#x534E;&#x6587;&#x884C;&#x6977;" color="green">&#x8F93;&#x51FA;(output)</font>&#xFF1A;<font face="&#x534E;&#x6587;&#x884C;&#x6977;">&#x544A;&#x8BC9; webpack &#x5728;&#x54EA;&#x91CC;&#x8F93;&#x51FA;&#x5B83;&#x6240;&#x521B;&#x5EFA;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x547D;&#x540D;&#x3002;</font></li>
+<li><font face="&#x534E;&#x6587;&#x884C;&#x6977;" color="green">&#x52A0;&#x8F7D;&#x8F6C;&#x6362;(loader)</font>&#xFF1A;<font face="&#x534E;&#x6587;&#x884C;&#x6977;">&#x8BA9; webpack &#x80FD;&#x591F;&#x53BB;&#x5904;&#x7406;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x8F6C;&#x6362;&#x4E3A;&#x53EF;&#x8BC6;&#x522B;&#x7684;&#x6A21;&#x5757;</font></li>
+<li><font face="&#x534E;&#x6587;&#x884C;&#x6977;" color="green">&#x63D2;&#x4EF6;(plugin)</font>&#xFF1A;<font face="&#x534E;&#x6587;&#x884C;&#x6977;">&#x7528;&#x4E8E;&#x6267;&#x884C;&#x8303;&#x56F4;&#x66F4;&#x5E7F;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x6269;&#x5C55;&#xFF09;&#x3002;&#x5305;&#x62EC;&#xFF1A;&#x6253;&#x5305;&#x4F18;&#x5316;&#xFF0C;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#xFF0C;&#x6CE8;&#x5165;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</font></li>
+<li><font face="&#x534E;&#x6587;&#x884C;&#x6977;" color="green">&#x6A21;&#x5F0F;(mode)</font>&#xFF1A;<font face="&#x534E;&#x6587;&#x884C;&#x6977;">&#x901A;&#x8FC7;&#x9009;&#x62E9; development, production &#x6216; none &#x4E4B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x6765;&#x8BBE;&#x7F6E; mode &#x53C2;&#x6570;</font>
+
+</li>
+</ul>
+<h3 id="41&#x5E38;&#x7528;-loader"><a name="41&#x5E38;&#x7528;-loader" class="anchor-navigation-ex-anchor" href="#41&#x5E38;&#x7528;-loader"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.&#x5E38;&#x7528; <code>Loader</code></h3>
+<ol>
+<li><p>&#x6837;&#x5F0F;&#xFF1A; <code>css-loader</code>&#x3001;<code>style-loader</code>&#x3001;<code>less-loader</code>&#x3001;<code>sass-loader</code>&#x7B49;</p>
+</li>
+<li><p><code>scss</code> &#x6837;&#x5F0F;&#x5904;&#x7406;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// webpack.config.js</span>
+{
+<span class="hljs-comment">// ...</span>
+<span class="hljs-built_in">module</span>: {
+  rules: [
+    {
+      test: <span class="hljs-regexp">/\.scss$/</span>,
+      use:[
+        {loader:<span class="hljs-string">&apos;style-loader&apos;</span>},
+        {loader:<span class="hljs-string">&apos;css-loader&apos;</span>,options:{sourceMap:<span class="hljs-literal">true</span>,modules:<span class="hljs-literal">true</span>}},
+        {loader:<span class="hljs-string">&apos;sass-loader&apos;</span>,options:{sourceMap:<span class="hljs-literal">true</span>}}
+      ],
+      exclude:<span class="hljs-regexp">/node_modules/</span>
+    }
+  ]
+}
+<span class="hljs-comment">// ...</span>
+}
+</code></pre>
+</li>
+<li><p><code>postcss-loader/autoprefixer</code>: &#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x8003;&#x8651;&#xFF0C;&#x5C06;&#x524D;&#x7F00;&#x8865;&#x5145;&#x4EA4;&#x7531;<code>webpack</code> &#x5B8C;&#x6210;
+```js
+// postcss.config.js
+module.exports = {
+plugins: [
+  // &#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#x5217;&#x8868;
+  require(&apos;autoprefixer&apos;),
+]
+}</p>
+</li>
+</ol>
+<p>// webpack.config.js
+{
+  // ...
+  module:{
+    rules: [
+      {
+        test: /.css$/,
+        use: [&apos;style-loader&apos;, &apos;css-loader&apos;, &apos;postcss-loader&apos;]
+      },
+      // ...
+    ]
+  },
+  // ...
+}</p>
+<pre><code>2. &#x6587;&#x4EF6;&#xFF1A;`raw-loader`&#x3001;`file-loader`&#x3001;`json-loader` &#x3001;`url-loader`&#x7B49;
+3. &#x7F16;&#x8BD1;&#xFF1A;`babel-loader`&#x3001;`coffee-loader` &#x3001;`ts-loader`&#x7B49;
+4. &#x6821;&#x9A8C;&#xFF1A;`mocha-loader`&#x3001;`jshint-loader` &#x3001;`eslint-loader`&#x7B49;
+
+&gt; &#x53C2;&#x8003;&#xFF1A; [webpack&#x4E4B; loader &#x548C; plugin &#x7B80;&#x4ECB;](https://juejin.im/post/5980752ef265da3e2e56e82e)
+
+### 4.2.&#x5E38;&#x7528; `plugin`
+
+&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6; `webpack.config.js` &#x4E2D;&#xFF0C;`plugins` &#x662F;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x3002; &#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x63D2;&#x4EF6;&#x5BF9;&#x8C61;&#x662F;&#x63D2;&#x4EF6;new&#x51FA;&#x6765;&#x7684;&#x5B9E;&#x4F8B;&#x3002;
+**&#x7528;&#x6CD5;**&#xFF1A;
+```js
+plugins:[plugin1,plugin2, ...]
+</code></pre><p><em>e.g.</em>&#xFF1A;</p>
+<pre><code class="lang-js">plugins: [
+    <span class="hljs-keyword">new</span> webpack.optimize.UglifyJsPlugin(),
+    <span class="hljs-keyword">new</span> HtmlWebpackPlugin({template: <span class="hljs-string">&apos;./public/index.html&apos;</span>})
+]
+</code></pre>
+<h4 id="421html&#x6587;&#x4EF6;&#x751F;&#x6210;&#x63D2;&#x4EF6;html-webpack-plugin"><a name="421html&#x6587;&#x4EF6;&#x751F;&#x6210;&#x63D2;&#x4EF6;html-webpack-plugin" class="anchor-navigation-ex-anchor" href="#421html&#x6587;&#x4EF6;&#x751F;&#x6210;&#x63D2;&#x4EF6;html-webpack-plugin"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.1.HTML&#x6587;&#x4EF6;&#x751F;&#x6210;&#x63D2;&#x4EF6;(html-webpack-plugin)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;HtmlWebpackPlugin &#x5728;&#x6B64;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x4E00;&#x4E2A;index.html&#x6216;&#x4F9D;&#x636E;&#x6A21;&#x677F;&#x751F;&#x6210;&#xFF0C;&#x5E2E;&#x4F60;&#x628A;&#x6240;&#x6709;&#x751F;&#x4EA7;&#x7684;js&#x6587;&#x4EF6;&#x5F15;&#x5165;&#x5230;html&#x4E2D;&#xFF0C;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x5230;output&#x76EE;&#x5F55;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev html-webpack-plugin
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>:</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x5F15;&#x5165;</span>
+<span class="hljs-keyword">const</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;html-webpack-plugin&apos;</span>);
+<span class="hljs-comment">//&#x914D;&#x7F6E;</span>
+plugins: [
+    <span class="hljs-keyword">new</span> HtmlWebpackPlugin({  <span class="hljs-comment">// &#x6253;&#x5305;&#x8F93;&#x51FA;HTML</span>
+      title: <span class="hljs-string">&apos;Hello World app&apos;</span>,
+      favicon: <span class="hljs-string">&apos;&apos;</span>,             <span class="hljs-comment">// &#x6307;&#x5B9A;&#x9875;&#x9762;&#x7684;&#x56FE;&#x6807;</span>
+      inject: <span class="hljs-string">&apos;&apos;</span>,              <span class="hljs-comment">// &#x5F15;&#x5165;&#x6A21;&#x677F;&#x7684;&#x6CE8;&#x5165;&#x4F4D;&#x7F6E;&#xFF08;true/false/body/head&#xFF09;</span>
+      minify: {                <span class="hljs-comment">// &#x538B;&#x7F29;HTML&#x6587;&#x4EF6;</span>
+        removeComments: <span class="hljs-literal">true</span>,     <span class="hljs-comment">// &#x79FB;&#x9664;HTML&#x4E2D;&#x7684;&#x6CE8;&#x91CA;</span>
+        collapseWhitespace: <span class="hljs-literal">true</span>, <span class="hljs-comment">// &#x5220;&#x9664;&#x7A7A;&#x767D;&#x7B26;&#x4E0E;&#x6362;&#x884C;&#x7B26;</span>
+        caseSensitive: <span class="hljs-literal">false</span>,     <span class="hljs-comment">// &#x662F;&#x5426;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;</span>
+        minifyCSS: <span class="hljs-literal">true</span>           <span class="hljs-comment">// &#x538B;&#x7F29;&#x5185;&#x8054;css</span>
+      },
+      template: <span class="hljs-string">&apos;index.html&apos;</span>,     <span class="hljs-comment">// &#x6A21;&#x677F;&#x6765;&#x6E90;html&#x6587;&#x4EF6;</span>
+      filename: <span class="hljs-string">&apos;index.html&apos;</span>      <span class="hljs-comment">// &#x751F;&#x6210;&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x540D;</span>
+    })
+]
+</code></pre>
+<h4 id="422&#x56FE;&#x7247;&#x538B;&#x7F29;&#x63D2;&#x4EF6;imagemin-webpack-plugin"><a name="422&#x56FE;&#x7247;&#x538B;&#x7F29;&#x63D2;&#x4EF6;imagemin-webpack-plugin" class="anchor-navigation-ex-anchor" href="#422&#x56FE;&#x7247;&#x538B;&#x7F29;&#x63D2;&#x4EF6;imagemin-webpack-plugin"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.2.&#x56FE;&#x7247;&#x538B;&#x7F29;&#x63D2;&#x4EF6;(imagemin-webpack-plugin)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x6279;&#x91CF;&#x538B;&#x7F29;&#x56FE;&#x7247;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev imagemin-webpack-plugin
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x5F15;&#x5165;&#x63D2;&#x4EF6;</span>
+<span class="hljs-keyword">var</span> ImageminPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;imagemin-webpack-plugin&apos;</span>).default;
+
+<span class="hljs-comment">//&#x914D;&#x7F6E;</span>
+plugins: [
+  <span class="hljs-keyword">new</span> ImageminPlugin({
+    disable: process.env.NODE_ENV !== <span class="hljs-string">&apos;production&apos;</span>, <span class="hljs-comment">// &#x5F00;&#x53D1;&#x65F6;&#x4E0D;&#x542F;&#x7528;</span>
+    pngquant: {<span class="hljs-comment">//&#x56FE;&#x7247;&#x8D28;&#x91CF;</span>
+      quality: <span class="hljs-string">&apos;95-100&apos;</span>
+    }
+  })
+]
+</code></pre>
+<h4 id="423&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x63D2;&#x4EF6;clean-webpack-plugin"><a name="423&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x63D2;&#x4EF6;clean-webpack-plugin" class="anchor-navigation-ex-anchor" href="#423&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x63D2;&#x4EF6;clean-webpack-plugin"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.3.&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;&#x63D2;&#x4EF6;(clean-webpack-plugin)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x6253;&#x5305;&#x524D;&#x5148;&#x6E05;&#x7A7A;output&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev clean-webpack-plugin
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x5F15;&#x5165;</span>
+<span class="hljs-keyword">const</span> CleanWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;clean-webpack-plugin&apos;</span>);
+<span class="hljs-comment">//&#x6E05;&#x7A7A;dist&#x6587;&#x4EF6;&#x5939;</span>
+plugins: [
+  <span class="hljs-keyword">new</span> CleanWebpackPlugin([<span class="hljs-string">&apos;public&apos;</span>])
+]
+</code></pre>
+<h4 id="424&#x5220;&#x9664;&#x5197;&#x4F59;css&#x63D2;&#x4EF6;purifycss-webpack"><a name="424&#x5220;&#x9664;&#x5197;&#x4F59;css&#x63D2;&#x4EF6;purifycss-webpack" class="anchor-navigation-ex-anchor" href="#424&#x5220;&#x9664;&#x5197;&#x4F59;css&#x63D2;&#x4EF6;purifycss-webpack"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.4.&#x5220;&#x9664;&#x5197;&#x4F59;css&#x63D2;&#x4EF6;(purifycss-webpack)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x53BB;&#x9664;&#x5197;&#x4F59;&#x7684;css&#x4EE3;&#x7801;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev purifycss-webpack
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> purifycssWebpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;purifycss-webpack&apos;</span>);
+<span class="hljs-keyword">const</span> glob = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;glob&apos;</span>);
+
+<span class="hljs-comment">// Make sure this is after ExtractTextPlugin!</span>
+<span class="hljs-keyword">new</span> purifycssWebpack({
+&#x3000;&#x3000;paths: glob.sync(path.resolve(<span class="hljs-string">&apos;./public/*.html&apos;</span>))
+}),
+</code></pre>
+<h4 id="425&#x52A0;&#x901F;&#x4EE3;&#x7801;&#x6784;&#x5EFA;happypack"><a name="425&#x52A0;&#x901F;&#x4EE3;&#x7801;&#x6784;&#x5EFA;happypack" class="anchor-navigation-ex-anchor" href="#425&#x52A0;&#x901F;&#x4EE3;&#x7801;&#x6784;&#x5EFA;happypack"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.5.&#x52A0;&#x901F;&#x4EE3;&#x7801;&#x6784;&#x5EFA;(happypack)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x6765;&#x52A0;&#x901F;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev happypack
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> os = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;os&apos;</span>);
+<span class="hljs-keyword">let</span> HappyPack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;happypack&apos;</span>);
+<span class="hljs-keyword">let</span> happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
+exports.plugins = [
+  <span class="hljs-keyword">new</span> HappyPack({
+    id: <span class="hljs-string">&apos;jsx&apos;</span>,
+    threadPool: happyThreadPool,
+    loaders: [ <span class="hljs-string">&apos;babel-loader&apos;</span> ]
+  }),
+
+  <span class="hljs-keyword">new</span> HappyPack({
+    id: <span class="hljs-string">&apos;coffeescripts&apos;</span>,
+    threadPool: happyThreadPool,
+    loaders: [ <span class="hljs-string">&apos;coffee-loader&apos;</span> ]
+  })
+];
+
+exports.module.loaders = [
+  {
+    test: <span class="hljs-regexp">/\.js$/</span>,
+    loaders: [ <span class="hljs-string">&apos;happypack/loader?id=jsx&apos;</span> ]
+  },
+  {
+    test: <span class="hljs-regexp">/\.coffee$/</span>,
+    loaders: [ <span class="hljs-string">&apos;happypack/loader?id=coffeescripts&apos;</span> ]
+  },
+]
+</code></pre>
+<h4 id="426&#x63D0;&#x53D6;&#x516C;&#x5171;&#x6A21;&#x5757;commonschunkplugin"><a name="426&#x63D0;&#x53D6;&#x516C;&#x5171;&#x6A21;&#x5757;commonschunkplugin" class="anchor-navigation-ex-anchor" href="#426&#x63D0;&#x53D6;&#x516C;&#x5171;&#x6A21;&#x5757;commonschunkplugin"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.6.&#x63D0;&#x53D6;&#x516C;&#x5171;&#x6A21;&#x5757;(CommonsChunkPlugin)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x63D0;&#x53D6;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x516C;&#x5171;&#x6A21;&#x5757;&#xFF0C;&#x5355;&#x72EC;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x907F;&#x514D;&#x5728;&#x591A;&#x5165;&#x53E3;&#x91CD;&#x590D;&#x6253;&#x5305;&#x6587;&#x4EF6;&#x3002;</p>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+  entry:[<span class="hljs-string">&apos;index1.js&apos;</span>,<span class="hljs-string">&apos;index2.js&apos;</span>],
+  plugins: [
+    <span class="hljs-keyword">new</span> CommonsChunkPlugin({
+      name:<span class="hljs-string">&quot;entry&quot;</span>,
+      filename:<span class="hljs-string">&quot;common.js&quot;</span>,  <span class="hljs-comment">//&#x5FFD;&#x7565;&#x5219;&#x4EE5;name&#x4E3A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5426;&#x5219;&#x4EE5;&#x6B64;&#x4E3A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x540D;&#x5B57;</span>
+      minChunks:<span class="hljs-number">2</span>,  <span class="hljs-comment">// &#x6700;&#x5C0F;&#x5F15;&#x7528;2&#x6B21;</span>
+   })
+  ]
+};
+<span class="hljs-comment">// &#x628A; index1.js&#xFF0C;index2.js&#x516C;&#x7528;&#x7684;js&#x62BD;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x6253;&#x5305;&#x6210;&#x5355;&#x72EC;&#x6587;&#x4EF6;common.js&#x3002;</span>
+</code></pre>
+<h4 id="427js&#x538B;&#x7F29;uglifyjsplugin"><a name="427js&#x538B;&#x7F29;uglifyjsplugin" class="anchor-navigation-ex-anchor" href="#427js&#x538B;&#x7F29;uglifyjsplugin"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.7.js&#x538B;&#x7F29;(UglifyJsPlugin)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x538B;&#x7F29;js&#x6587;&#x4EF6;&#x3002;</p>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+  entry:[<span class="hljs-string">&apos;index.js&apos;</span>],
+  plugins: [
+    <span class="hljs-keyword">new</span> webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: VERBOSE,
+      },
+    })
+  ]
+};
+</code></pre>
+<h4 id="428&#x5F00;&#x542F;&#x670D;&#x52A1;&#x63D2;&#x4EF6;webpack-dev-server"><a name="428&#x5F00;&#x542F;&#x670D;&#x52A1;&#x63D2;&#x4EF6;webpack-dev-server" class="anchor-navigation-ex-anchor" href="#428&#x5F00;&#x542F;&#x670D;&#x52A1;&#x63D2;&#x4EF6;webpack-dev-server"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.8.&#x5F00;&#x542F;&#x670D;&#x52A1;&#x63D2;&#x4EF6;(webpack-dev-server)</h4>
+<p><strong>&#x4F5C;&#x7528;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#x3001;&#x70ED;&#x66FF;&#x6362;&#x7B49;&#x529F;&#x80FD;&#x7684;&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
+<p><strong>&#x5B89;&#x88C5;</strong>&#xFF1A;</p>
+<pre><code class="lang-bash">npm install --save-dev  webpack-dev-server
+</code></pre>
+<p><strong>&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// package.json</span>
+{
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;webpack-dev-server --open --hot&quot;</span>,
+    <span class="hljs-string">&quot;build&quot;</span>: <span class="hljs-string">&quot;set NODE_ENV=production &amp;&amp; webpack&quot;</span>
+  },
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(path);
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-comment">// ...</span>
+  plugins: [
+    <span class="hljs-keyword">new</span> webpack.HotModuleReplacementPlugin()  <span class="hljs-comment">// &#x70ED;&#x6A21;&#x5757;&#x66FF;&#x6362;&#xFF1A;&#x53EA;&#x66FF;&#x6362;&#x66F4;&#x65B0;&#x90E8;&#x5206;,&#x4E0D;&#x4F1A;&#x9875;&#x9762;&#x91CD;&#x8F7D;.</span>
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, <span class="hljs-string">&apos;public&apos;</span>),
+    port: <span class="hljs-number">8000</span>,
+    <span class="hljs-comment">// inline: false,</span>
+    hot: <span class="hljs-literal">true</span>,
+  }
+}
+</code></pre>
+<blockquote>
+<p>&#x53C2;&#x8003;&#xFF1A;<a href="https://juejin.im/post/5d591c2ae51d453b39774399" target="_blank">webpack&#x5E38;&#x7528;&#x63D2;&#x4EF6;</a></p>
+</blockquote>
+<hr>
+<p><footer class="footer"><div class="footer__container--normal" alt="
+https://github.com/skyFi&#x5176;&#x4ED6;/3_webpack&#x7684;&#x4F7F;&#x7528;.html
+">
+<img src="data:image/gif;base64,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" width="170" height="170"></div></footer></p>
+<div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;">&#x4E13;&#x6CE8;&#x4E4B;&#x540E;&#xFF0C;&#x59CB;&#x80FD;&#x5FD8;&#x5FE7;...<sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Python, Ruby, PHP &amp; web&#x524D;&#x7AEF;</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Mr. Yao all right reserved, powered by <a href="https://github.com/skyFi" target="_blank">skyFi</a></p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2020-04-15 22:04:29
+</p></div></div><div class="box__issues">
+
+</div>
+<div id="gitalk-container"></div> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2_gh-pages部署到GitHub.html" class="navigation navigation-prev " aria-label="Previous page: 3.2.gh-pages 部署">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4_个人网站之GitBook的简单使用.html" class="navigation navigation-next " aria-label="Next page: 3.4.GitBook的简单使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3.webpack的使用","level":"2.3.3","depth":2,"next":{"title":"3.4.GitBook的简单使用","level":"2.3.4","depth":2,"path":"其他/4_个人网站之GitBook的简单使用.md","ref":"./其他/4_个人网站之GitBook的简单使用.md","articles":[]},"previous":{"title":"3.2.gh-pages 部署","level":"2.3.2","depth":2,"path":"其他/2_gh-pages部署到GitHub.md","ref":"./其他/2_gh-pages部署到GitHub.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","autotheme","search-plus","advanced-emoji","github","-sharing","sharing-plus","embed-pdf","code","copy-code-button","splitter","page-copyright","expandable-chapters","anchor-navigation-ex","klipse","donate","change_girls","alerts","popup","mygitalk","chapter-fold","pageview-count","versions-select","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/yaojusheng"},"livereload":{},"splitter":{},"change_girls":{"time":10,"urls":["https://raw.githubusercontent.com/YaoJusheng/blog_photos/master/photos/others/2018-09-12_背景图片2.jpg","https://raw.githubusercontent.com/YaoJusheng/blog_photos/master/photos/others/2018-09-12_背景图片27.jpg","https://raw.githubusercontent.com/YaoJusheng/blog_photos/master/photos/others/2018-09-12_背景图片22.jpg"]},"search":{},"page-copyright":{"wisdom":"Python, Ruby, PHP & web前端","noPowered":false,"copyright":"Copyright &#169; Mr. Yao","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":true,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"专注之后，始能忘忧...","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"donate":{"alipay":"https://raw.githubusercontent.com/YaoJusheng/blog_photos/master/min_photos/payment/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://raw.githubusercontent.com/YaoJusheng/blog_photos/master/min_photos/payment/wechat.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":["sepia","night","white"],"family":["serif","sans"],"size":[1,2,3,4]},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{"showLevel":true},"pageview-count":{},"alerts":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"35890ce192840bd76bc6","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["yaojusheng"],"createIssueManually":false,"distractionFreeMode":false,"repo":"webBook","owner":"yaojusheng","enableHotKey":true,"clientSecret":"18b465f1ea803824fe0aef032d74ce6262df3b6e","pagerDirection":"last","labels":["Gitalk"]},"autotheme":{"night":[20,21,22,23,0,1,2,3,4,5],"sepia":[6,7,8,18,19,19],"white":[9,10,11,12,13,14,15,16,17]},"klipse":{"myConfigKey":"it's the default value"},"versions":{"options":[{"value":"http://gitbook.yaojusheng.com","text":"v3.2.3"}]},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Mr. Yao <jusheng_yao@outlook.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web前端基础","language":"zh-hans","links":{"sidebar":{"个人博客":"http://blog.yaogro.cn","静态简历":"http://blog.yaogro.cn/resume","动态简历":"http://blog.yaogro.cn/dynamic-resume","简历制作":"http://blog.yaogro.cn/online-resume"}},"gitbook":"*","description":"This is a book of CSS style created by gitbook","extension":null},"file":{"path":"其他/3_webpack的使用.md","mtime":"2020-04-15T14:04:29.731Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-15T15:40:02.153Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-autotheme/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-change_girls/girls.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
