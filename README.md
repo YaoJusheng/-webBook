@@ -1,11 +1,9 @@
+![](https://img.shields.io/badge/doc-文档-cccfff.svg?style=popout-square&colorA=006699)
 
 ## 关于Web前端知识的一些整理
 
 
-![](https://img.shields.io/badge/doc-文档-cccfff.svg?style=popout-square&colorA=006699)
-
-
-![](https://img.shields.io/badge/language-javascript-green.svg)  ![](https://img.shields.io/npm/v/drone.svg)
+![](https://img.shields.io/badge/language-javascript-green.svg)  ![](https://img.shields.io/npm/v/drone.svg)  ![](https://img.shields.io/badge/license-Apache--2.0-green)
 
 
 ## 1.HTML基础
